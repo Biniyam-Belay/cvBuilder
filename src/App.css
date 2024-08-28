@@ -1,5 +1,9 @@
 /* General styles */
 .App {
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+  justify-content: center;
   font-family: Arial, sans-serif;
   max-width: 1000px;
   margin: 0 auto;
@@ -13,7 +17,8 @@ h1 {
 
 /* Form styles */
 form {
-  background-color: #111111;
+  background-color: #292929;
+  min-width: 450px;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 8px;
@@ -56,6 +61,8 @@ button:hover {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-width: 600px;
+  gap: 10px;
 }
 
 .cv-preview h2 {
@@ -78,6 +85,7 @@ button:hover {
 }
 
 .cv-preview button {
+  max-width: 100px;
   margin-right: 10px;
   background-color: #e74c3c;
   transition: background-color 0.3s;
@@ -89,8 +97,6 @@ button:hover {
 
 /* Layout adjustments */
 .forms {
-  display: flex;
-  flex-direction: column;
   gap: 20px;
   margin-bottom: 20px;
 }
